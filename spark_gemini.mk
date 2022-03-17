@@ -18,7 +18,12 @@
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
+#Spark Stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+export WITH_GAPPS=true
 SPARK_BUILD_TYPE := UNOFFICIAL
+
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
