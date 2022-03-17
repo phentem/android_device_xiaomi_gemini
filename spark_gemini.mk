@@ -18,6 +18,8 @@
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
+SPARK_BUILD_TYPE := UNOFFICIAL
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
